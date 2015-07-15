@@ -1,8 +1,7 @@
 #! /usr/bin/env python
 import _mypath
-from emst import squares
-from active_learning import squares2
+from preprocessing import distancematrix_from_csv
 
 if __name__ == '__main__':
-    squares(0, 10)
-    squares2(0, 10)
+    distance_matrix = distancematrix_from_csv('/Users/robsonmotta/Documents/git/emst/fixtures/calories.csv')
+    print distance_matrix
